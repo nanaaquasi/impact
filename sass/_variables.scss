@@ -1,0 +1,58 @@
+$color-primary-light: hsl(259, 51%, 25%);
+$color-primary-dark: hsl(259, 51%, 18%);
+
+$color-accent-light: hsl(48, 100%, 52%);
+$color-accent-dark: hsl(46, 91%, 50%);
+
+$color-grey-light: #fefff8;
+$color-grey-light-1: #b8b8b8;
+$color-grey-light-2: #dce5e7;
+$color-grey-dark: #23292b;
+
+$color-white: #feffff;
+$color-black: #000;
+
+$font-header: 'Paytone One';
+$font-text: 'Visby CF';
+$font-color: $color-primary-light;
+
+@mixin absCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin respond($breakpoint) {
+  @if $breakpoint==phone {
+    @media (max-width: 37.5em) {
+      @content;
+    }
+
+    //600px
+  }
+
+  @if $breakpoint==tab-port {
+    @media (max-width: 56.25em) {
+      @content;
+    }
+
+    //900px
+  }
+
+  @if $breakpoint==tab-land {
+    @media (max-width: 75em) {
+      @content;
+    }
+
+    //1200px
+  }
+
+  @if $breakpoint==big-desktop {
+    @media (min-width: 112.5em) {
+      @content;
+    }
+
+    //1800+
+  }
+}

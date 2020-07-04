@@ -4,7 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "npm-run-all compile:sass parcel",
+    "parcel": "parcel *.html",
+    "build": "parcel build *.html",
+    "compile:sass": "sass --watch sass/main.scss:css/style.css"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.4",
+    "concat": "^1.0.3",
+    "npm-run-all": "^4.1.1",
+    "parcel-bundler": "^1.12.4",
+    "postcss-cli": "^4.1.1"
   },
   "keywords": [],
   "author": "",

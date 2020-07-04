@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  max-width: 100%;
+  max-height: 100%;
+  font-family: $font-text, 'sans-serif';
+  font-size: 1.6rem;
+  font-weight: 500;
+
+  h1 {
+    color: $font-color;
+  }
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+
+  @include respond(tab-land) {
+    //width < 1200
+    font-size: 56.25%; //1rem = 9px 9/16*100 
+  }
+
+  @include respond(tab-port) {
+    //width < 900
+    font-size: 60%; // 1 rem = 8px 8/16*100 = 50%
+  }
+
+  @include respond(big-desktop) {
+    font-size: 75%; // 1 rem = 12px 12/16 * 100 = 75%
+  }
+}
