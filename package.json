@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npm-run-all compile:sass parcel",
-    "parcel": "parcel *.html",
+    "dev": "parcel watch *.html",
     "build": "parcel build *.html",
     "compile:sass": "sass --watch sass/main.scss:css/style.css"
   },
@@ -17,6 +16,6 @@
     "postcss-cli": "^4.1.1"
   },
   "keywords": [],
-  "author": "",
+  "author": "clintdev",
   "license": "ISC"
 }
