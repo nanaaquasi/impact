@@ -17,5 +17,8 @@
   },
   "keywords": [],
   "author": "clintdev",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "pattern.css": "^1.0.0"
+  }
 }

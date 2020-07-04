@@ -12,10 +12,9 @@ body {
   font-family: $font-text, 'sans-serif';
   font-size: 1.6rem;
   font-weight: 500;
+  color: $color-primary-dark;
 
-  h1 {
-    color: $font-color;
-  }
+
 }
 
 html {
