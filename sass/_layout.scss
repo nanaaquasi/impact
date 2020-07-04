@@ -1,17 +1,19 @@
 .main {
   display: flex;
   flex-direction: column;
+  padding: 0 6rem;
 
   .header {
-    background: $color-primary-dark;
     height: 10vh;
-    color: $color-white;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .hero_section {
-    background: $color-accent-dark;
     height: 90vh;
-    color: $color-white;
+    margin-top: 8rem;
 
     display: flex;
 
@@ -21,7 +23,7 @@
 
     &-right {
       width: 55%;
-      background: $color-primary-light;
+
     }
   }
 }
