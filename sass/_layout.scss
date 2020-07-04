@@ -1,0 +1,27 @@
+.main {
+  display: flex;
+  flex-direction: column;
+
+  .header {
+    background: $color-primary-dark;
+    height: 10vh;
+    color: $color-white;
+  }
+
+  .hero_section {
+    background: $color-accent-dark;
+    height: 90vh;
+    color: $color-white;
+
+    display: flex;
+
+    &-left {
+      flex: 1;
+    }
+
+    &-right {
+      width: 55%;
+      background: $color-primary-light;
+    }
+  }
+}
