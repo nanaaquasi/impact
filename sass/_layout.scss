@@ -81,6 +81,7 @@
   margin: 0 auto 6rem auto;
   display: flex;
   color: $color-white;
+  scroll-behavior: smooth;
 
   &_left {
     flex: 1;

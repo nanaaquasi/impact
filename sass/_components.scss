@@ -15,9 +15,7 @@
     }
 
     &-item {
-      font-size: 1.8rem;
-      font-family: $font-text;
-      font-weight: 700;
+
       display: inline-block;
       vertical-align: middle;
       -webkit-transform: perspective(1px) translateZ(0);
@@ -27,6 +25,15 @@
       overflow: hidden;
       padding-bottom: 1rem;
       cursor: pointer;
+
+      a {
+        text-decoration: none;
+
+        font-size: 1.8rem;
+        font-family: $font-text;
+        font-weight: 700;
+        color: inherit;
+      }
 
       &:before {
         content: '';
