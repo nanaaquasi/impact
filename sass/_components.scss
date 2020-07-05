@@ -1,7 +1,7 @@
 .header {
   &__logo {
     p {
-      font-size: 4.6rem;
+      font-size: 4rem;
       font-family: $font-header;
       color: $color-primary-dark;
       margin-bottom: 1rem;
@@ -170,16 +170,40 @@
 
 .services {
 
+  &_heading {
+
+    width: 35%;
+    margin: 4rem auto;
+
+    h1 {
+      font-size: 5rem;
+      font-weight: 900;
+      text-align: center;
+      padding-bottom: 1rem;
+      border-bottom: 6px dashed $color-accent-dark;
+      align-self: center;
+    }
+  }
+
   .card {
     width: 30%;
+    // height: 35rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    padding: 4rem 2rem;
+    padding: 2rem;
     box-shadow: 0px 3px 18px -3px rgba(222, 222, 222, 1);
     background: white;
-    border-radius: 1rem;
+    border-radius: 1.5rem;
+
+    &:nth-child(2) {
+      transform: translateY(6rem);
+    }
+
+    &:nth-child(3) {
+      transform: translateY(12rem);
+    }
 
     &_icon {
       height: 20%;
@@ -187,31 +211,34 @@
 
     h3 {
       width: 100%;
-      height: 20%;
+      // height: 20%;
       text-align: center;
-      margin-bottom: 1.5rem;
+      // margin-bottom: 1.5rem;
       font-weight: 900;
     }
 
     p {
-      flex: 1;
+      // flex: 1;
       line-height: 1.4;
       font-weight: 500;
       color: $color-grey-light-1;
-      margin: 1rem 0;
+      margin-top: .5rem;
       align-self: flex-start;
+      text-align: center;
+      font-size: 1.5rem;
     }
 
     .btn_tertiary {
-      padding: .5rem 1rem;
+      padding: 1rem;
       border: none;
       outline: none;
       font: inherit;
-      width: 100%;
       display: flex;
       place-content: center;
       place-items: center;
       background: $color-grey-light-2;
+      border-radius: 50%;
+      margin-top: 1rem;
       cursor: pointer;
 
       &:hover {
@@ -223,6 +250,78 @@
         height: 3rem;
         margin: 0 auto;
       }
+    }
+  }
+}
+
+.mission {
+  div {
+    margin-top: 6rem;
+  }
+}
+
+.footer {
+  &_nav {
+    margin: 3rem 0;
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+
+      li {
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  &_logo {
+
+    p {
+      font-size: 4rem;
+      font-family: $font-header;
+      color: $color-white;
+      margin-bottom: 1rem;
+    }
+
+  }
+
+  &_right {
+    h1 {
+      border-bottom: 4px solid $color-accent-dark;
+      padding-bottom: .8rem;
+    }
+
+    .contact_details {
+      margin-top: 2rem;
+
+      p {
+        font-size: 2rem;
+        margin-top: 2.5rem;
+        line-height: 1.4;
+      }
+    }
+
+    .social_links {
+      display: flex;
+      margin-top: 4rem;
+
+      .social_icon {
+
+        img {
+          margin-right: 1rem;
+          width: 4rem;
+          height: 4rem;
+        }
+
+      }
+    }
+  }
+
+  .copyright {
+    p {
+      font-size: 1.8rem;
+      line-height: 1.4;
     }
   }
 }
