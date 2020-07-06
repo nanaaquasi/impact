@@ -82,3 +82,49 @@ ScrollReveal().reveal('.third_card', {
   duration: 1500,
   delay: 200,
 });
+
+ScrollReveal().reveal('.jumbotron', {
+  scale: 0.8,
+  duration: 500,
+  easing: 'ease-in',
+});
+
+ScrollReveal().reveal('.ceo_profile-image', {
+  origin: 'bottom',
+  duration: 800,
+  easing: 'ease-out',
+});
+
+ScrollReveal().reveal('.other_teams-profile', {
+  origin: 'right',
+  duration: 800,
+  easing: 'ease-in',
+});
+
+ScrollReveal().reveal('.other_teams-profile:nth-child(2)', {
+  origin: 'bottom',
+  duration: 800,
+  delay: 100,
+  easing: 'ease-in',
+});
+
+ScrollReveal().reveal('.other_teams-profile:nth-child(3)', {
+  origin: 'bottom',
+  duration: 800,
+  delay: 200,
+  easing: 'ease-in',
+});
+
+ScrollReveal().reveal('.ceo_profile-right', {
+  origin: 'left',
+  duration: 800,
+  delay: 100,
+  easing: 'ease-in',
+});
+
+ScrollReveal().reveal('.ceo_profile-header h2', {
+  origin: 'right',
+  duration: 800,
+  delay: 100,
+  easing: 'ease-in',
+});
