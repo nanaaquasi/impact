@@ -1,5 +1,7 @@
 .header {
   &__logo {
+    margin-left: 6rem;
+
     p {
       font-size: 4rem;
       font-family: $font-header;
@@ -15,7 +17,6 @@
     }
 
     &-item {
-
       display: inline-block;
       vertical-align: middle;
       -webkit-transform: perspective(1px) translateZ(0);
@@ -87,6 +88,7 @@
     }
 
     &-left {
+      margin-left: 6rem;
 
       button,
       button:focus,
@@ -123,39 +125,48 @@
 }
 
 .business_goals {
-  .pattern-dots-lg {
-    position: absolute;
-    width: 55rem;
-    height: 50rem;
-    border-radius: 90%;
-    color: $color-accent-dark;
+  position: relative;
 
-    top: 0;
-    left: 0;
-    transform: translate(-10rem, -5rem);
-  }
+
 
   .about {
+    position: relative;
     flex: 1;
-    padding: 0 6rem;
+    // padding: 0 6rem;
+
+    .pattern-dots-lg {
+      position: absolute;
+      top: 0;
+      transform: translate(-8rem, -6rem);
+      width: 30rem;
+      height: 30rem;
+      color: $color-accent-dark;
+
+    }
 
     h3 {
-      font-size: 3rem;
+      font-size: 4.2rem;
       font-weight: 900;
+      margin-left: 6rem;
+
+
+
+      color: $color-primary-dark;
     }
 
     &-description {
       width: 50vw;
+      background: $color-accent-lighter;
+      box-shadow: 0px 3px 18px -3px rgba(222, 222, 222, 1);
+      padding: 4rem;
 
       h2 {
-        width: 90%;
-        font-size: 4.5rem;
+        font-size: 4rem;
         font-weight: 900;
         line-height: 1.1;
       }
 
       p {
-        width: 82%;
         font-size: 2rem;
         font-weight: 600;
         line-height: 1.4;
@@ -170,15 +181,14 @@
         background-color: $color-primary-light;
         color: $color-white;
         padding: 1.5rem 3rem;
+        cursor: pointer;
       }
     }
   }
 }
 
 .services {
-
   &_heading {
-
     width: 35%;
     margin: 4rem auto;
 
@@ -229,7 +239,7 @@
       line-height: 1.4;
       font-weight: 500;
       color: $color-grey-light-1;
-      margin-top: .5rem;
+      margin-top: 0.5rem;
       align-self: flex-start;
       text-align: center;
       font-size: 1.5rem;
@@ -261,6 +271,47 @@
   }
 }
 
+.team_profiles {
+  .card {
+    width: 23%;
+    height: 100%;
+    border-radius: 2rem;
+    box-shadow: 0px 3px 18px -3px rgba(222, 222, 222, 1);
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+
+    &_image {
+      flex: 2;
+      background: $color-accent-dark;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+
+    &_body {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+
+      &-title {
+        margin-bottom: 0.5rem;
+
+        h2 {
+          font-size: 1.8rem;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
 .mission {
   div {
     margin-top: 6rem;
@@ -283,24 +334,25 @@
   }
 
   &_logo {
-
     p {
       font-size: 4rem;
       font-family: $font-header;
       color: $color-white;
       margin-bottom: 1rem;
     }
-
   }
 
   &_right {
+    margin-top: 2rem;
+
     h1 {
       border-bottom: 4px solid $color-accent-dark;
-      padding-bottom: .8rem;
+      padding-bottom: 0.8rem;
+      font-size: 2.4rem;
     }
 
     .contact_details {
-      margin-top: 2rem;
+      margin-top: 1.5rem;
 
       p {
         font-size: 2rem;
@@ -314,13 +366,11 @@
       margin-top: 4rem;
 
       .social_icon {
-
         img {
           margin-right: 1rem;
           width: 4rem;
           height: 4rem;
         }
-
       }
     }
   }
@@ -329,6 +379,123 @@
     p {
       font-size: 1.8rem;
       line-height: 1.4;
+    }
+  }
+}
+
+.about {
+  background-color: $color-accent-lighter !important;
+}
+
+.jumbotron {
+  width: 95%;
+  height: 60vh;
+  margin: 8rem auto 2rem auto;
+  background: $color-accent-lighter;
+  border-radius: 2rem;
+  display: grid;
+  place-items: center;
+
+  background-color: #DFDBE5;
+  background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%239C92AC' fill-opacity='0.3' fill-rule='evenodd'/%3E%3C/svg%3E");
+  background-position: center;
+
+
+
+  h1 {
+    font-size: 6rem;
+    font-family: $font-header;
+  }
+}
+
+.intro {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+
+
+  p {
+    font-size: 2.4rem;
+    text-align: center;
+    width: 60%;
+    line-height: 1.4;
+  }
+}
+
+
+.ceo_profile {
+
+  &-header {
+    border-top: 2px solid $color-grey-light-2;
+    border-left: 2px solid $color-grey-light-2;
+    padding: 2rem;
+    margin-bottom: 6rem;
+
+    h2 {
+      font-size: 4.2rem;
+      font-weight: 900;
+      font-family: $font-header;
+    }
+  }
+
+  &-left {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-image {
+    width: 100%;
+    height: 85%;
+    margin-bottom: 1rem;
+    border: .8rem solid $color-accent-dark;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &-details {
+    flex: 1;
+    padding: .4rem 1rem;
+
+    h2 {
+      font-size: 2rem;
+      font-weight: 900;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin-bottom: .5rem;
+    }
+  }
+
+  &-right {
+    flex: 1;
+    padding: 2rem;
+
+    margin-left: 2rem;
+    background: $color-white;
+    box-shadow: 0px 3px 18px -3px rgba(222, 222, 222, 1);
+
+    h2 {
+      font-weight: 900;
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+
+      span {
+        color: $color-accent-dark;
+      }
+    }
+
+
+    p {
+      font-size: 2rem;
+      line-height: 1.5;
     }
   }
 }
