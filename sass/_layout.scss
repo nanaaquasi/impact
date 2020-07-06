@@ -21,7 +21,7 @@
 
   .hero_section {
     height: 90vh;
-    margin-top: 12rem;
+    margin-top: 15rem;
     padding: 2rem 6rem;
     display: flex;
     flex-wrap: wrap;
@@ -43,7 +43,6 @@
   flex-wrap: wrap;
   margin: .5rem auto 6rem auto;
   border-radius: 2rem;
-  background: $color-accent-lighter;
 }
 
 .services {
@@ -51,8 +50,8 @@
   margin: .5rem auto 6rem auto;
   display: flex;
   flex-direction: column;
-  // align-items: flex-start;
   padding: 6rem 10rem;
+
 
   .showcase {
     display: flex;
@@ -72,13 +71,61 @@
   border-bottom-right-radius: 2rem;
 }
 
+.team {
+  width: 90%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  margin: 10rem auto 12rem auto;
+
+  &_heading {
+    width: 35%;
+    margin: 2rem auto;
+
+    h1 {
+      font-size: 5rem;
+      font-weight: 900;
+      text-align: center;
+      padding-bottom: 1rem;
+      border-bottom: 6px dashed $color-accent-dark;
+      align-self: center;
+    }
+  }
+
+  .btn_secondary {
+    border: none;
+    font-family: inherit;
+    font-size: 1.4rem;
+    font-weight: 700;
+    background-color: $color-primary-light;
+    color: $color-white;
+    padding: 1.5rem 5rem;
+    align-self: center;
+    margin-top: 4rem;
+    border-radius: .5rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $color-primary-dark;
+    }
+  }
+
+  &_profiles {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+}
+
 .footer {
   width: 90vw;
   background: $color-primary-dark;
   height: 70vh;
   padding: 6rem;
   border-radius: 2rem;
-  margin: 0 auto 6rem auto;
+  margin: 8rem auto 6rem auto;
   display: flex;
   color: $color-white;
   scroll-behavior: smooth;
@@ -99,4 +146,25 @@
     flex-direction: column;
     align-items: flex-start;
   }
+}
+
+.ceo {
+  &_profile {
+    width: 90%;
+    margin: 6rem auto 2rem auto;
+    display: flex;
+    flex-direction: column;
+
+    &-main {
+      height: 90vh;
+      display: flex;
+    }
+  }
+}
+
+.other_teams {
+  width: 90%;
+  margin: 8rem auto;
+  height: 80vh;
+  background-color: $color-accent-dark;
 }
