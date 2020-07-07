@@ -13,7 +13,7 @@ body {
   font-size: 1.6rem;
   font-weight: 500;
   color: $color-primary-dark;
-
+  overflow-x: hidden;
 
   .scroll_container {
     scroll-behavior: smooth;
@@ -46,7 +46,7 @@ html {
 
   @include respond(tab-port) {
     //width < 900
-    font-size: 60%; // 1 rem = 8px 8/16*100 = 50%
+    font-size: 58%; // 1 rem = 8px 8/16*100 = 50%
   }
 
   @include respond(big-desktop) {

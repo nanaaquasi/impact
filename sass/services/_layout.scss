@@ -1,0 +1,16 @@
+.services {
+  &_main {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin: 6rem auto;
+
+    &-wrapper {
+      display: flex;
+      justify-content: space-between;
+      height: 65vh;
+      width: 100%;
+      margin: 0rem 0 8rem 0;
+    }
+  }
+}

@@ -2,3 +2,10 @@
 @import "base";
 @import "components";
 @import "layout";
+
+// styles per page
+@import "./services/layout";
+@import "./services/components";
+
+@import "./teams/layout";
+@import "./teams/components";
