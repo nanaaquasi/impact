@@ -1,0 +1,26 @@
+.about {
+  &_main {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin: 6rem auto;
+
+    &-wrapper {
+      display: flex;
+      justify-content: space-between;
+      height: 82vh;
+      width: 100%;
+      margin: 0rem 0 8rem 0;
+    }
+  }
+
+  &_cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+    &>.card {
+      width: 25%;
+    }
+  }
+}
