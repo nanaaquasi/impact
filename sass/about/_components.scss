@@ -48,6 +48,36 @@
       line-height: 1.6;
       font-size: 1.8rem;
     }
+
+  }
+
+  &_cards {
+    padding: 0;
+
+    img {
+      object-fit: cover;
+    }
+    
+    .card {
+      text-align: center;
+
+      p:first-of-type {
+        margin-bottom: 1rem;
+        font-weight: 900;
+        font-size: 2.4rem;
+      }
+
+      &.primary {
+        color: $color-white;
+        background-color: $color-primary-dark;
+
+      }
+
+      &.accent {
+        background-color: $color-accent-dark;
+        color: $color-primary-dark;
+      }
+    }
   }
 
 
