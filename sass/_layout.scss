@@ -109,6 +109,11 @@
     &:hover {
       background-color: $color-primary-dark;
     }
+
+    a {
+      text-decoration: none;
+      color: $color-white;
+    }
   }
 
   &_profiles {

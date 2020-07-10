@@ -1,5 +1,3 @@
-console.log('...Working');
-
 ScrollReveal().reveal('.hero_section-content h1', {
   origin: 'left',
   distance: '300px',
@@ -83,11 +81,11 @@ ScrollReveal().reveal('.third_card', {
   delay: 200,
 });
 
-// ScrollReveal().reveal('.jumbotron', {
-//   scale: 0.8,
-//   duration: 500,
-//   easing: 'ease-in',
-// });
+ScrollReveal().reveal('.jumbotron', {
+  scale: 0.8,
+  duration: 400,
+  easing: 'ease-in',
+});
 
 ScrollReveal().reveal('.ceo_profile-image', {
   origin: 'bottom',

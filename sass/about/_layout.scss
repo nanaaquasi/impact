@@ -18,7 +18,7 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    
+
     &>.card {
       width: 25%;
       display: flex;
@@ -26,4 +26,11 @@
       justify-content: center;
     }
   }
+}
+
+.milestones {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  background: $color-primary-dark;
 }
