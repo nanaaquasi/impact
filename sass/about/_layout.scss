@@ -27,7 +27,7 @@
     display: flex;
     flex-wrap: wrap;
 
-    &>.card {
+    & > .card {
       width: 25%;
       display: flex;
       flex-direction: column;
@@ -42,5 +42,4 @@
   width: 90%;
   margin: 4rem auto 3rem auto;
   height: 80vh;
-  background: $color-primary-dark;
 }
