@@ -6,6 +6,41 @@
   margin: 0;
 }
 
+@font-face {
+  font-family: 'Visby CF';
+  src: url(../assets/fonts/VisbyCF-Medium.ttf) format('truetype');
+  font-display: swap;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Visby CF';
+  src: url(../assets/fonts/VisbyCF-Medium.ttf) format('truetype');
+  font-display: swap;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Visby CF';
+  src: url(../assets/fonts/VisbyCF-Bold.ttf) format('truetype');
+  font-display: swap;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Visby CF';
+  src: url(../assets/fonts/VisbyCF-ExtraBold.ttf) format('truetype');
+  font-display: swap;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'Visby CF';
+  src: url(../assets/fonts/VisbyCF-Heavy.ttf) format('truetype');
+  font-display: swap;
+  font-weight: 900;
+}
+
 body {
   max-width: 100%;
   max-height: 100%;

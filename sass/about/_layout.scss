@@ -14,6 +14,14 @@
     }
   }
 
+  &_mission {
+    &-wrapper {
+      display: flex;
+      height: 70vh;
+      background: $color-accent-dark;
+    }
+  }
+
   &_cards {
     width: 100%;
     display: flex;
@@ -32,5 +40,7 @@
   display: flex;
   flex-direction: column;
   width: 90%;
+  margin: 4rem auto 3rem auto;
+  height: 80vh;
   background: $color-primary-dark;
 }

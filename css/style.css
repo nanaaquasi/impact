@@ -6,6 +6,36 @@
   margin: 0;
 }
 
+@font-face {
+  font-family: "Visby CF";
+  src: url(../assets/fonts/VisbyCF-Medium.ttf) format("truetype");
+  font-display: swap;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Visby CF";
+  src: url(../assets/fonts/VisbyCF-Medium.ttf) format("truetype");
+  font-display: swap;
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Visby CF";
+  src: url(../assets/fonts/VisbyCF-Bold.ttf) format("truetype");
+  font-display: swap;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Visby CF";
+  src: url(../assets/fonts/VisbyCF-ExtraBold.ttf) format("truetype");
+  font-display: swap;
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Visby CF";
+  src: url(../assets/fonts/VisbyCF-Heavy.ttf) format("truetype");
+  font-display: swap;
+  font-weight: 900;
+}
 body {
   max-width: 100%;
   max-height: 100%;
@@ -855,6 +885,11 @@ html {
   width: 100%;
   margin: 0rem 0 8rem 0;
 }
+.about_mission-wrapper {
+  display: flex;
+  height: 70vh;
+  background: #f1bc0e;
+}
 .about_cards {
   width: 100%;
   display: flex;
@@ -871,6 +906,8 @@ html {
   display: flex;
   flex-direction: column;
   width: 90%;
+  margin: 4rem auto 3rem auto;
+  height: 80vh;
   background: #251645;
 }
 
