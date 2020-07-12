@@ -49,21 +49,6 @@ body {
   body {
     overflow-x: hidden;
   }
-  body .scroll_container {
-    scroll-behavior: smooth;
-  }
-  body::-webkit-scrollbar {
-    width: 10px;
-    border-radius: 10px;
-  }
-  body::-webkit-scrollbar-track {
-    background: #1e1e24;
-    border-radius: 10px;
-  }
-  body::-webkit-scrollbar-thumb {
-    background: #f1bc0e;
-    border-radius: 10px;
-  }
 }
 body .scroll_container {
   scroll-behavior: smooth;
@@ -1586,7 +1571,7 @@ html {
   flex-direction: column;
   width: 90%;
   margin: 4rem auto 3rem auto;
-  height: 80vh;
+  height: 81vh;
 }
 
 .about_header {

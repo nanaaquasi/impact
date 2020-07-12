@@ -52,25 +52,6 @@ body {
 
   @include respond(phone) {
     overflow-x: hidden;
-
-    .scroll_container {
-      scroll-behavior: smooth;
-    }
-
-    &::-webkit-scrollbar {
-      width: 10px;
-      border-radius: 10px;
-    }
-
-    &::-webkit-scrollbar-track {
-      background: #1e1e24;
-      border-radius: 10px;
-    }
-
-    &::-webkit-scrollbar-thumb {
-      background: $color-accent-dark;
-      border-radius: 10px;
-    }
   }
 
   .scroll_container {
