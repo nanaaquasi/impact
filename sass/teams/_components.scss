@@ -6,10 +6,20 @@
     padding: 2rem;
     margin-bottom: 6rem;
 
+    @include respond(phone) {
+      padding: 1rem;
+      margin-bottom: 2rem;
+    }
+
     h2 {
       font-size: 4.2rem;
       font-weight: 900;
       font-family: $font-header;
+
+      @include respond(phone) {
+        font-size: 2.8rem;
+        line-height: 1.2;
+      }
     }
   }
 
@@ -17,6 +27,10 @@
     width: 40%;
     display: flex;
     flex-direction: column;
+
+    @include respond(phone) {
+      width: 100%;
+    }
   }
 
   &-image {
@@ -25,6 +39,13 @@
     margin-bottom: 1rem;
     border: .8rem solid $color-accent-dark;
     overflow: hidden;
+
+    @include respond(phone) {
+      width: 30rem;
+      height: 30rem;
+      margin: 1rem auto;
+      border: .6rem solid $color-accent-dark;
+    }
 
     img {
       width: 100%;
@@ -41,6 +62,10 @@
       font-size: 2rem;
       font-weight: 900;
       margin-bottom: 1rem;
+
+      @include respond(phone) {
+        font-size: 1.85rem;
+      }
     }
 
     p {
@@ -55,6 +80,18 @@
     margin-left: 2rem;
     background: $color-white;
     box-shadow: 0px 3px 18px -3px rgba(222, 222, 222, 1);
+
+    #more {
+      @include respond(phone) {
+        display: none;
+      }
+    }
+
+    @include respond(phone) {
+      box-shadow: none;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
 
     h2 {
       font-weight: 900;
@@ -83,12 +120,25 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 4rem;
+    padding: 2rem;
+
+    @include respond(phone) {
+      width: 95%;
+      height: auto;
+      box-shadow: 0px 3px 18px -3px rgba(222, 222, 222, 1);
+      margin: 2rem auto;
+    }
 
 
     &--image {
       width: 85%;
       height: 60%;
 
+      @include respond(phone) {
+        width: 55%;
+        height: 32%;
+        margin: 2rem auto 1rem auto;
+      }
 
       img {
         width: 100%;
@@ -97,6 +147,10 @@
         border-radius: 10%;
         filter: grayscale(100);
         transition: all .2s;
+
+        @include respond(phone) {
+          border-radius: 50%;
+        }
 
         &:hover {
           filter: grayscale(0);

@@ -12,6 +12,16 @@
       height: 40rem;
       margin-top: 1.5rem;
 
+      @include respond(tab-port) {
+        width: 30rem;
+        height: 30rem;
+        align-self: center;
+        justify-self: center;
+        margin-right: 2rem;
+        margin-left: 1rem;
+        margin-top: 4rem;
+      }
+
       @include respond(phone) {
         width: 20rem;
         height: 20rem;
@@ -31,6 +41,10 @@
     padding: 0 4rem;
     box-shadow: 0px 3px 18px -3px rgba(222, 222, 222, 1);
 
+    @include respond(tab-port) {
+      padding: 0 2rem;
+    }
+
     @include respond(phone) {
       padding: 0 2rem;
       box-shadow: none;
@@ -48,9 +62,14 @@
       font-weight: 900;
       font-size: 2.4rem;
 
+      @include respond(tab-port) {
+        font-size: 2rem;
+        margin-top: 2rem;
+      }
+
       @include respond(phone) {
         margin-top: 1.5rem;
-        font-size: 1.8rem;
+        font-size: 2rem;
       }
     }
 
@@ -58,9 +77,14 @@
       line-height: 1.6;
       font-size: 1.8rem;
 
+      @include respond(tab-port) {
+        line-height: 1.6;
+        font-size: 1.8rem;
+      }
+
       @include respond(phone) {
         line-height: 1.5;
-        font-size: 1.7rem;
+        font-size: 1.8rem;
       }
     }
 
@@ -75,6 +99,10 @@
 
   display: flex;
   flex-direction: column;
+
+  @include respond(tab-port) {
+    width: 48%;
+  }
 
   @include respond(phone) {
     width: 100%;
@@ -110,8 +138,8 @@
     margin-top: 2rem;
 
     @include respond(phone) {
-      font-size: 1.6rem;
-      line-height: 1.4;
+      font-size: 1.8rem;
+      line-height: 1.6;
     }
   }
 
@@ -127,6 +155,10 @@
   box-shadow: 0px 3px 18px -3px rgba(222, 222, 222, 1);
   padding: 2rem 4rem;
 
+  @include respond(tab-port) {
+    padding: 2rem;
+  }
+
   @include respond(phone) {
     width: 100%;
     padding: 2rem;
@@ -137,6 +169,10 @@
     font-size: 2.2rem;
     font-weight: 900;
     margin-bottom: 2rem;
+
+    @include respond(tab-port) {
+      margin-bottom: 1rem;
+    }
   }
 
   ul {
@@ -177,7 +213,8 @@
     font-family: $font-header;
 
     @include respond(phone) {
-      font-size: 2.4rem;
+      font-size: 3rem;
+      line-height: 1.1;
     }
   }
 }

@@ -8,6 +8,14 @@
     &-main {
       height: 90vh;
       display: flex;
+
+      @include respond(phone) {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+
+      }
     }
   }
 }
@@ -25,5 +33,10 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    @include respond(phone) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }

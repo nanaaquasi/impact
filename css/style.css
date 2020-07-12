@@ -371,7 +371,7 @@ html {
 @media only screen and (max-width: 40em) {
   .hero_section-right .hero__image {
     max-width: calc(100vw - 5rem);
-    margin: 0 auto;
+    margin: 2rem auto;
   }
 }
 .hero_section-right .hero__image img {
@@ -387,6 +387,7 @@ html {
 
 .business_goals {
   position: relative;
+  overflow-x: hidden;
 }
 .business_goals .about {
   position: relative;
@@ -454,15 +455,15 @@ html {
 }
 @media only screen and (max-width: 40em) {
   .business_goals .about-description {
-    width: 95%;
-    padding: 3rem;
+    width: 100%;
+    padding: 3rem 1.5rem;
     margin: 0.5rem auto;
   }
 }
 .business_goals .about-description h2 {
   font-size: 4rem;
   font-weight: 900;
-  line-height: 1.1;
+  line-height: 1.2;
 }
 @media only screen and (max-width: 56.25em) {
   .business_goals .about-description h2 {
@@ -488,7 +489,8 @@ html {
 }
 @media only screen and (max-width: 40em) {
   .business_goals .about-description p {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    line-height: 1.6;
     margin: 1rem 0;
   }
 }
@@ -544,7 +546,7 @@ html {
 }
 @media only screen and (max-width: 56.25em) {
   .services_heading h1 {
-    font-size: 2.8rem;
+    font-size: 3rem;
     border-bottom: 2px dashed #f1bc0e;
     padding-bottom: 0.4rem;
   }
@@ -627,11 +629,10 @@ html {
 .services .card p {
   line-height: 1.4;
   font-weight: 500;
-  color: #aaaaaa;
   margin-top: 1rem;
   align-self: flex-start;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 .services .card .btn_tertiary {
   padding: 1rem;
@@ -667,6 +668,7 @@ html {
 @media only screen and (max-width: 56.25em) {
   .team_profiles .card {
     width: 47%;
+    height: 100%;
     margin: 1rem auto 2rem auto;
   }
 }
@@ -677,7 +679,7 @@ html {
   }
 }
 .team_profiles .card_image {
-  flex: 2;
+  flex: 1;
 }
 @media only screen and (max-width: 40em) {
   .team_profiles .card_image {
@@ -737,7 +739,7 @@ html {
 }
 @media only screen and (max-width: 40em) {
   .footer_nav ul li a {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 }
 @media only screen and (max-width: 40em) {
@@ -792,8 +794,9 @@ html {
 @media only screen and (max-width: 40em) {
   .footer_right .contact_details p {
     font-size: 1.6rem;
-    margin-top: 0.5rem;
-    line-height: 1.4;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
   }
 }
 .footer_right .social_links {
@@ -826,8 +829,9 @@ html {
 @media only screen and (max-width: 40em) {
   .footer .copyright p {
     font-size: 1.5rem;
-    line-height: 1.2;
+    line-height: 1.6;
     text-align: center;
+    margin-top: 1rem;
   }
 }
 
@@ -903,6 +907,7 @@ html {
 @media only screen and (max-width: 40em) {
   .intro p {
     font-size: 1.8rem;
+    line-height: 1.6;
     width: 90%;
   }
 }
@@ -1008,6 +1013,7 @@ html {
 .main {
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 .main .header {
   width: 100%;
@@ -1020,6 +1026,7 @@ html {
   position: fixed;
   top: 0;
   z-index: 800;
+  overflow-x: hidden;
   box-shadow: 0px 3px 5px 0px rgba(209, 209, 209, 0.57);
 }
 @media only screen and (max-width: 56.25em) {
@@ -1039,6 +1046,7 @@ html {
   padding: 2rem 6rem;
   display: flex;
   justify-content: start;
+  overflow-x: hidden;
 }
 @media only screen and (max-width: 56.25em) {
   .main .hero_section {
@@ -1281,7 +1289,7 @@ html {
     width: 100%;
     background: #251645;
     height: auto;
-    padding: 2rem;
+    padding: 2rem 1.5rem;
     flex-direction: column;
     margin: 8rem auto 0 auto;
     border-radius: 0.2rem;
@@ -1347,9 +1355,15 @@ html {
   width: 85%;
   margin: 6rem auto;
 }
+@media only screen and (max-width: 56.25em) {
+  .services_main {
+    width: 95%;
+    margin: 2rem auto 1rem auto;
+  }
+}
 @media only screen and (max-width: 40em) {
   .services_main {
-    width: 90%;
+    width: 95%;
     margin: 2rem auto 1rem auto;
   }
 }
@@ -1360,6 +1374,23 @@ html {
   height: 65vh;
   width: 100%;
   margin: 0rem 0 8rem 0;
+}
+@media only screen and (max-width: 56.25em) {
+  .services_main-wrapper {
+    width: 100%;
+    margin: 0rem 0 8rem 0;
+    height: 55vh;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .services_main-wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 3px 18px -3px #dedede;
+    margin: 0rem 0 4rem 0;
+  }
 }
 @media only screen and (max-width: 40em) {
   .services_main-wrapper.reverse {
@@ -1374,16 +1405,6 @@ html {
     box-shadow: none;
   }
 }
-@media only screen and (max-width: 40em) {
-  .services_main-wrapper {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0px 3px 18px -3px #dedede;
-    margin: 0rem 0 4rem 0;
-  }
-}
 
 .services_left {
   width: 100%;
@@ -1393,6 +1414,17 @@ html {
   width: 40rem;
   height: 40rem;
   margin-top: 1.5rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .services_left-image {
+    width: 30rem;
+    height: 30rem;
+    align-self: center;
+    justify-self: center;
+    margin-right: 2rem;
+    margin-left: 1rem;
+    margin-top: 4rem;
+  }
 }
 @media only screen and (max-width: 40em) {
   .services_left-image {
@@ -1411,6 +1443,11 @@ html {
   padding: 0 4rem;
   box-shadow: 0px 3px 18px -3px #dedede;
 }
+@media only screen and (max-width: 56.25em) {
+  .services_right {
+    padding: 0 2rem;
+  }
+}
 @media only screen and (max-width: 40em) {
   .services_right {
     padding: 0 2rem;
@@ -1428,20 +1465,32 @@ html {
   font-weight: 900;
   font-size: 2.4rem;
 }
+@media only screen and (max-width: 56.25em) {
+  .services_right h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+}
 @media only screen and (max-width: 40em) {
   .services_right h2 {
     margin-top: 1.5rem;
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 }
 .services_right p {
   line-height: 1.6;
   font-size: 1.8rem;
 }
+@media only screen and (max-width: 56.25em) {
+  .services_right p {
+    line-height: 1.6;
+    font-size: 1.8rem;
+  }
+}
 @media only screen and (max-width: 40em) {
   .services_right p {
     line-height: 1.5;
-    font-size: 1.7rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -1449,6 +1498,11 @@ html {
   width: 45%;
   display: flex;
   flex-direction: column;
+}
+@media only screen and (max-width: 56.25em) {
+  .feasibility_left {
+    width: 48%;
+  }
 }
 @media only screen and (max-width: 40em) {
   .feasibility_left {
@@ -1484,8 +1538,8 @@ html {
 }
 @media only screen and (max-width: 40em) {
   .feasibility_left p {
-    font-size: 1.6rem;
-    line-height: 1.4;
+    font-size: 1.8rem;
+    line-height: 1.6;
   }
 }
 .feasibility_left h2 {
@@ -1498,6 +1552,11 @@ html {
   box-shadow: 0px 3px 18px -3px #dedede;
   padding: 2rem 4rem;
 }
+@media only screen and (max-width: 56.25em) {
+  .feasibility_right {
+    padding: 2rem;
+  }
+}
 @media only screen and (max-width: 40em) {
   .feasibility_right {
     width: 100%;
@@ -1509,6 +1568,11 @@ html {
   font-size: 2.2rem;
   font-weight: 900;
   margin-bottom: 2rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .feasibility_right h2 {
+    margin-bottom: 1rem;
+  }
 }
 .feasibility_right ul {
   display: flex;
@@ -1546,7 +1610,8 @@ html {
 }
 @media only screen and (max-width: 40em) {
   .services_header h2 {
-    font-size: 2.4rem;
+    font-size: 3rem;
+    line-height: 1.1;
   }
 }
 
@@ -1582,6 +1647,14 @@ html {
   height: 90vh;
   display: flex;
 }
+@media only screen and (max-width: 40em) {
+  .ceo_profile-main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 .other_teams {
   width: 95%;
@@ -1596,6 +1669,12 @@ html {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+@media only screen and (max-width: 40em) {
+  .other_teams-members {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 .ceo_profile-header {
   border-top: 2px solid #dce5e7;
@@ -1603,15 +1682,32 @@ html {
   padding: 2rem;
   margin-bottom: 6rem;
 }
+@media only screen and (max-width: 40em) {
+  .ceo_profile-header {
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+}
 .ceo_profile-header h2 {
   font-size: 4.2rem;
   font-weight: 900;
   font-family: "Paytone One";
 }
+@media only screen and (max-width: 40em) {
+  .ceo_profile-header h2 {
+    font-size: 2.8rem;
+    line-height: 1.2;
+  }
+}
 .ceo_profile-left {
   width: 40%;
   display: flex;
   flex-direction: column;
+}
+@media only screen and (max-width: 40em) {
+  .ceo_profile-left {
+    width: 100%;
+  }
 }
 .ceo_profile-image {
   width: 100%;
@@ -1619,6 +1715,14 @@ html {
   margin-bottom: 1rem;
   border: 0.8rem solid #f1bc0e;
   overflow: hidden;
+}
+@media only screen and (max-width: 40em) {
+  .ceo_profile-image {
+    width: 30rem;
+    height: 30rem;
+    margin: 1rem auto;
+    border: 0.6rem solid #f1bc0e;
+  }
 }
 .ceo_profile-image img {
   width: 100%;
@@ -1634,6 +1738,11 @@ html {
   font-weight: 900;
   margin-bottom: 1rem;
 }
+@media only screen and (max-width: 40em) {
+  .ceo_profile-details h2 {
+    font-size: 1.85rem;
+  }
+}
 .ceo_profile-details p {
   margin-bottom: 0.5rem;
 }
@@ -1643,6 +1752,18 @@ html {
   margin-left: 2rem;
   background: #feffff;
   box-shadow: 0px 3px 18px -3px #dedede;
+}
+@media only screen and (max-width: 40em) {
+  .ceo_profile-right #more {
+    display: none;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .ceo_profile-right {
+    box-shadow: none;
+    padding: 1rem;
+    margin: 1rem 0;
+  }
 }
 .ceo_profile-right h2 {
   font-weight: 900;
@@ -1664,10 +1785,26 @@ html {
   flex-direction: column;
   align-items: center;
   margin-bottom: 4rem;
+  padding: 2rem;
+}
+@media only screen and (max-width: 40em) {
+  .other_teams-profile {
+    width: 95%;
+    height: auto;
+    box-shadow: 0px 3px 18px -3px #dedede;
+    margin: 2rem auto;
+  }
 }
 .other_teams-profile--image {
   width: 85%;
   height: 60%;
+}
+@media only screen and (max-width: 40em) {
+  .other_teams-profile--image {
+    width: 55%;
+    height: 32%;
+    margin: 2rem auto 1rem auto;
+  }
 }
 .other_teams-profile--image img {
   width: 100%;
@@ -1676,6 +1813,11 @@ html {
   border-radius: 10%;
   filter: grayscale(100);
   transition: all 0.2s;
+}
+@media only screen and (max-width: 40em) {
+  .other_teams-profile--image img {
+    border-radius: 50%;
+  }
 }
 .other_teams-profile--image img:hover {
   filter: grayscale(0);
