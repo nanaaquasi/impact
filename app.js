@@ -127,22 +127,18 @@ ScrollReveal().reveal('.ceo_profile-header h2', {
   easing: 'ease-in',
 });
 
-const readMoreButton = document.querySelector('.read_more');
+document.querySelectorAll('.read_more').forEach(readMoreButton =>
+  readMoreButton.addEventListener('click', function () {
+    const [dots, moreText] = this.previousElementSibling.children;
 
-readMoreButton.addEventListener('click', myFunction);
-
-function myFunction() {
-  const dots = document.getElementById('dots');
-  const moreText = document.getElementById('more');
-  const readMoreButton = document.getElementById('more_btn');
-
-  if (dots.style.display === 'none') {
-    dots.style.display = 'inline';
-    readMoreButton.innerHTML = 'Read more';
-    moreText.style.display = 'none';
-  } else {
-    dots.style.display = 'none';
-    readMoreButton.innerHTML = 'Read less';
-    moreText.style.display = 'inline';
-  }
-}
+    if (dots.style.display === 'none') {
+      dots.style.display = 'inline';
+      moreText.style.display = 'none';
+      this.innerHTML = 'Read more';
+    } else {
+      dots.style.display = 'none';
+      moreText.style.display = 'inline';
+      this.innerHTML = 'Read less';
+    }
+  })
+);
