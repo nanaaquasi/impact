@@ -1875,12 +1875,19 @@ html {
   justify-content: center;
 }
 
-.milestones {
+.experiences {
   display: flex;
   flex-direction: column;
   width: 90%;
-  margin: 4rem auto 3rem auto;
-  height: 81vh;
+  margin: 4rem auto 8rem auto;
+}
+.experiences .slide-item {
+  display: flex;
+  width: 100%;
+}
+.experiences .slide-item > div {
+  width: 50%;
+  height: 64vh;
 }
 
 .about_header {
@@ -1945,6 +1952,30 @@ html {
 .about_cards .card.accent {
   background-color: #f1bc0e;
   color: #251645;
+}
+
+.experiences .slide-item img {
+  object-fit: cover;
+}
+.experiences .slide-item > div:last-of-type {
+  padding: 0 14px;
+}
+.experiences .slide-item > div:last-of-type .item-header {
+  margin-bottom: 24px;
+}
+.experiences .slide-item > div:last-of-type .item-header > h3 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 900;
+  font-size: 2.4rem;
+}
+.experiences .slide-item > div:last-of-type .item-header > span {
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+.experiences .slide-item > div:last-of-type p {
+  line-height: 1.6;
+  font-size: 1.8rem;
 }
 
 /*# sourceMappingURL=style.css.map */

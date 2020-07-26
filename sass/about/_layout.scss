@@ -22,6 +22,7 @@
     }
   }
 
+
   &_cards {
     width: 100%;
     display: flex;
@@ -36,10 +37,19 @@
   }
 }
 
-.milestones {
+.experiences {
   display: flex;
   flex-direction: column;
   width: 90%;
-  margin: 4rem auto 3rem auto;
-  height: 81vh;
+  margin: 4rem auto 8rem auto;
+
+  .slide-item {
+    display: flex;
+    width: 100%;
+
+     & > div {
+      width: 50%;
+      height: 64vh;
+    }
+  }
 }

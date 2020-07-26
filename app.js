@@ -127,6 +127,11 @@ ScrollReveal().reveal('.ceo_profile-header h2', {
   easing: 'ease-in',
 });
 
+new Splide('.splide', {
+  type: 'loop',
+  autoplay: true,
+}).mount();
+
 document.querySelectorAll('.read_more').forEach(readMoreButton =>
   readMoreButton.addEventListener('click', function () {
     const [dots, moreText] = this.previousElementSibling.children;
