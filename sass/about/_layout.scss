@@ -50,6 +50,14 @@
      & > div {
       width: 50%;
       height: 64vh;
+
+      img {
+        width: 50rem;
+        object-fit: cover;
+        margin-left: 6rem;
+      }
     }
+
+ 
   }
 }

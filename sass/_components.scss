@@ -108,6 +108,10 @@
         margin-right: 2rem;
       }
     }
+
+    #menu-btn {
+      display: none;
+    }
   }
 
   @include respond(phone) {
@@ -147,10 +151,6 @@
 
     .menu-icon .navicon:after {
       top: -5px;
-    }
-
-    .menu-btn {
-      display: none;
     }
 
     .menu-btn:checked~ul {
@@ -663,6 +663,34 @@
 .mission {
   div {
     margin-top: 6rem;
+
+    .slide-item {
+
+      &>div:last-of-type {
+        padding: 0 30px;
+        .item-header  {
+          margin-bottom: 24px;
+
+          &>h3 {
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 900;
+            font-size: 2.4rem;
+          }
+
+          &>span {
+            font-size: 1.4rem;
+            font-weight: 900;
+          }
+        }
+
+        p {
+          line-height: 1.6;
+          font-size: 1.8rem;
+        }
+      }
+
+    }
   }
 }
 
@@ -730,14 +758,14 @@
     }
 
     h1 {
-      border-bottom: 4px solid $color-accent-dark;
+      border-bottom: 4px solid $color-accent-light;
       padding-bottom: 0.8rem;
       font-size: 2.4rem;
       margin-top: 0;
 
       @include respond(phone) {
         font-size: 1.8rem;
-        border-bottom: 2px solid $color-accent-dark;
+        border-bottom: 2px solid $color-accent-light;
         padding-bottom: 0.4rem;
         margin-top: 3rem;
       }

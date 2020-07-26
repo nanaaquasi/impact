@@ -65,6 +65,7 @@
         margin-bottom: 1rem;
         font-weight: 900;
         font-size: 2.4rem;
+        color: $color-white;
       }
 
       &.primary {
@@ -76,6 +77,10 @@
       &.accent {
         background-color: $color-accent-dark;
         color: $color-primary-dark;
+
+        p {
+          color: $color-white;
+        }
       }
     }
   }
@@ -84,6 +89,7 @@
 .experiences {
   .slide-item {
     img {
+      width: 100%;
       object-fit: cover;
     }
 

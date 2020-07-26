@@ -107,7 +107,7 @@ html {
 .header__logo p {
   font-size: 4rem;
   font-family: "Paytone One";
-  color: #0a011e;
+  color: #071831;
   margin-bottom: 1rem;
   cursor: pointer;
 }
@@ -185,6 +185,9 @@ html {
 .header__nav-item:not(:last-child) {
   margin-right: 2rem;
 }
+.header__nav #menu-btn {
+  display: none;
+}
 @media only screen and (max-width: 40em) {
   .header .menu-icon {
     cursor: pointer;
@@ -217,9 +220,6 @@ html {
   }
   .header .menu-icon .navicon:after {
     top: -5px;
-  }
-  .header .menu-btn {
-    display: none;
   }
   .header .menu-btn:checked ~ ul {
     width: 100%;
@@ -263,7 +263,7 @@ html {
   font-family: "Visby CF";
   font-weight: 900;
   line-height: 1;
-  color: #0a011e;
+  color: #071831;
 }
 @media only screen and (max-width: 56.25em) {
   .hero_section-content h1 {
@@ -424,7 +424,7 @@ html {
   font-weight: 900;
   margin-left: 6rem;
   margin-bottom: 0;
-  color: #0a011e;
+  color: #071831;
 }
 @media only screen and (max-width: 56.25em) {
   .business_goals .about h3 {
@@ -500,14 +500,14 @@ html {
   font-family: inherit;
   font-size: 1.4rem;
   font-weight: 700;
-  background-color: #100628;
+  background-color: #0c2955;
   color: #feffff;
   padding: 1.5rem 3rem;
   cursor: pointer;
   border-radius: 0.5rem;
 }
 .business_goals .about-description .btn_secondary:hover {
-  background-color: #0a011e;
+  background-color: #071831;
 }
 .business_goals .about-description .btn_secondary a {
   text-decoration: none;
@@ -711,6 +711,26 @@ html {
 .mission div {
   margin-top: 6rem;
 }
+.mission div .slide-item > div:last-of-type {
+  padding: 0 30px;
+}
+.mission div .slide-item > div:last-of-type .item-header {
+  margin-bottom: 24px;
+}
+.mission div .slide-item > div:last-of-type .item-header > h3 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 900;
+  font-size: 2.4rem;
+}
+.mission div .slide-item > div:last-of-type .item-header > span {
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+.mission div .slide-item > div:last-of-type p {
+  line-height: 1.6;
+  font-size: 1.8rem;
+}
 
 .footer_nav {
   margin: 3rem 0;
@@ -772,7 +792,7 @@ html {
   }
 }
 .footer_right h1 {
-  border-bottom: 4px solid #002c3f;
+  border-bottom: 4px solid #6ccbf3;
   padding-bottom: 0.8rem;
   font-size: 2.4rem;
   margin-top: 0;
@@ -780,7 +800,7 @@ html {
 @media only screen and (max-width: 40em) {
   .footer_right h1 {
     font-size: 1.8rem;
-    border-bottom: 2px solid #002c3f;
+    border-bottom: 2px solid #6ccbf3;
     padding-bottom: 0.4rem;
     margin-top: 3rem;
   }
@@ -1159,6 +1179,33 @@ html {
   clip-path: polygon(0 0, 100% 17%, 100% 100%, 0% 100%);
   border-bottom-left-radius: 2rem;
   border-bottom-right-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 4rem auto 8rem auto;
+}
+.mission_header {
+  text-align: center;
+  font-size: 4.2rem;
+  font-weight: 900;
+  font-family: "Paytone One";
+}
+.mission .slide {
+  margin-bottom: 4rem;
+  margin-top: -8rem;
+}
+.mission .slide-item {
+  display: flex;
+  width: 100%;
+}
+.mission .slide-item > div {
+  width: 50%;
+  height: 64vh;
+}
+.mission .slide-item > div img {
+  width: 50rem;
+  object-fit: cover;
+  margin-left: 3rem;
 }
 @media only screen and (max-width: 56.25em) {
   .mission {
@@ -1270,7 +1317,7 @@ html {
 
 .footer {
   width: 95vw;
-  background: #0a011e;
+  background: #071831;
   height: 70vh;
   padding: 6rem;
   border-radius: 2rem;
@@ -1282,14 +1329,14 @@ html {
 @media only screen and (max-width: 56.25em) {
   .footer {
     width: 95vw;
-    background: #0a011e;
+    background: #071831;
     height: auto;
   }
 }
 @media only screen and (max-width: 40em) {
   .footer {
     width: 100%;
-    background: #0a011e;
+    background: #071831;
     height: auto;
     padding: 2rem 1.5rem;
     flex-direction: column;
@@ -1622,7 +1669,7 @@ html {
   font-family: inherit;
   font-size: 1.4rem;
   font-weight: 700;
-  background-color: #100628;
+  background-color: #0c2955;
   color: #feffff;
   padding: 1rem;
   cursor: pointer;
@@ -1636,7 +1683,7 @@ html {
   }
 }
 .read_more:hover {
-  background-color: #0a011e;
+  background-color: #071831;
 }
 
 .ceo_profile {
@@ -1891,6 +1938,11 @@ html {
   width: 50%;
   height: 64vh;
 }
+.experiences .slide-item > div img {
+  width: 50rem;
+  object-fit: cover;
+  margin-left: 6rem;
+}
 
 .about_header {
   border-top: 2px solid #fbfeff;
@@ -1946,17 +1998,22 @@ html {
   margin-bottom: 1rem;
   font-weight: 900;
   font-size: 2.4rem;
+  color: #feffff;
 }
 .about_cards .card.primary {
   color: #feffff;
-  background-color: #0a011e;
+  background-color: #071831;
 }
 .about_cards .card.accent {
   background-color: #002c3f;
-  color: #0a011e;
+  color: #071831;
+}
+.about_cards .card.accent p {
+  color: #feffff;
 }
 
 .experiences .slide-item img {
+  width: 100%;
   object-fit: cover;
 }
 .experiences .slide-item > div:last-of-type {
