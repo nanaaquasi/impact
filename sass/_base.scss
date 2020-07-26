@@ -47,7 +47,8 @@ body {
   font-family: $font-text, 'sans-serif';
   font-size: 1.6rem;
   font-weight: 500;
-  color: $color-primary-dark;
+  color: $color-black;
+  background-color: $color-grey-light-2;
   overflow-x: hidden;
 
   @include respond(phone) {
@@ -69,7 +70,7 @@ body {
   }
 
   &::-webkit-scrollbar-thumb {
-    background: $color-accent-dark;
+    background: $color-accent-light;
     border-radius: 10px;
   }
 }

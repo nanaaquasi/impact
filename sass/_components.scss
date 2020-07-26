@@ -239,7 +239,7 @@
     }
 
     &-left {
-      margin-left: 6rem;
+      margin-left: 4rem;
 
       @include respond(tab-port) {
         margin-left: 4rem;
@@ -256,8 +256,8 @@
         font-family: inherit;
         font-size: 2rem;
         font-weight: 800;
-        color: $color-primary-dark;
-        background: $color-accent-light;
+        color: $color-accent-lighter;
+        background: $color-accent-dark;
         border: none;
         outline: none;
         border-radius: 0.6rem;
@@ -286,7 +286,7 @@
 
         a {
           text-decoration: none;
-          color: $color-primary-dark;
+          color: $color-accent-lighter;
         }
       }
     }
@@ -382,7 +382,7 @@
 
     &-description {
       width: 50vw;
-      background: $color-accent-lighter;
+      background: $color-accent-light;
       box-shadow: 0px 3px 18px -3px rgba(222, 222, 222, 1);
       padding: 4rem;
       z-index: 100;
@@ -586,18 +586,18 @@
       display: flex;
       place-content: center;
       place-items: center;
-      background: $color-grey-light-2;
+      background: $color-accent-light;
       border-radius: 50%;
       margin-top: 1rem;
       cursor: pointer;
 
       &:hover {
-        background: $color-primary-dark;
+        background: $color-accent-dark;
       }
 
       .icon {
-        width: 3rem;
-        height: 3rem;
+        width: 2rem;
+        height: 2rem;
         margin: 0 auto;
       }
     }
@@ -610,6 +610,7 @@
     height: 100%;
     border-radius: 2rem;
     box-shadow: 0px 3px 18px -3px rgba(222, 222, 222, 1);
+    background-color: $color-white;
     overflow: hidden;
 
     display: flex;
@@ -957,9 +958,9 @@
     .btn_secondary {
       border: none;
       font-family: inherit;
-      font-size: 1.4rem;
-      font-weight: 700;
-      background-color: $color-primary-light;
+      font-size: 1.6rem;
+      font-weight: 900;
+      background-color: $color-secondary-dark;
       color: $color-white;
       padding: 1.5rem 3rem;
       cursor: pointer;
@@ -967,7 +968,7 @@
       border-radius: .5rem;
 
       &:hover {
-        background-color: $color-primary-dark;
+        background-color: $color-secondary-dark;
       }
     }
   }

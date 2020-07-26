@@ -210,9 +210,9 @@
   .btn_secondary {
     border: none;
     font-family: inherit;
-    font-size: 1.4rem;
-    font-weight: 700;
-    background-color: $color-primary-light;
+    font-size: 1.6rem;
+    font-weight: 900;
+    background-color: $color-secondary-dark;
     color: $color-white;
     padding: 1.5rem 5rem;
     align-self: center;
@@ -221,7 +221,7 @@
     cursor: pointer;
 
     &:hover {
-      background-color: $color-primary-dark;
+      background-color: $color-secondary-dark;
     }
 
     a {

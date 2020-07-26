@@ -42,7 +42,8 @@ body {
   font-family: "Visby CF", "sans-serif";
   font-size: 1.6rem;
   font-weight: 500;
-  color: #251645;
+  color: #000;
+  background-color: #fbfeff;
   overflow-x: hidden;
 }
 @media only screen and (max-width: 40em) {
@@ -62,7 +63,7 @@ body::-webkit-scrollbar-track {
   border-radius: 10px;
 }
 body::-webkit-scrollbar-thumb {
-  background: #f1bc0e;
+  background: #6ccbf3;
   border-radius: 10px;
 }
 
@@ -106,7 +107,7 @@ html {
 .header__logo p {
   font-size: 4rem;
   font-family: "Paytone One";
-  color: #251645;
+  color: #0a011e;
   margin-bottom: 1rem;
   cursor: pointer;
 }
@@ -169,7 +170,7 @@ html {
   left: 0;
   right: 100%;
   bottom: 0;
-  background: #f1bc0e;
+  background: #002c3f;
   height: 4px;
   -webkit-transition-property: right;
   transition-property: right;
@@ -262,7 +263,7 @@ html {
   font-family: "Visby CF";
   font-weight: 900;
   line-height: 1;
-  color: #251645;
+  color: #0a011e;
 }
 @media only screen and (max-width: 56.25em) {
   .hero_section-content h1 {
@@ -299,7 +300,7 @@ html {
   }
 }
 .hero_section-left {
-  margin-left: 6rem;
+  margin-left: 4rem;
 }
 @media only screen and (max-width: 56.25em) {
   .hero_section-left {
@@ -318,8 +319,8 @@ html {
   font-family: inherit;
   font-size: 2rem;
   font-weight: 800;
-  color: #251645;
-  background: #ffce0a;
+  color: #dcf5ff;
+  background: #002c3f;
   border: none;
   outline: none;
   border-radius: 0.6rem;
@@ -351,13 +352,13 @@ html {
 .hero_section-left button:hover,
 .hero_section-left button:focus:hover,
 .hero_section-left button:active:hover {
-  background: #f1bc0e;
+  background: #002c3f;
 }
 .hero_section-left button a,
 .hero_section-left button:focus a,
 .hero_section-left button:active a {
   text-decoration: none;
-  color: #251645;
+  color: #dcf5ff;
 }
 .hero_section-right .hero__image {
   width: 72rem;
@@ -400,7 +401,7 @@ html {
   transform: translate(-8rem, -6rem);
   width: 30rem;
   height: 30rem;
-  color: #f1bc0e;
+  color: #002c3f;
   z-index: -1;
 }
 @media only screen and (max-width: 56.25em) {
@@ -423,7 +424,7 @@ html {
   font-weight: 900;
   margin-left: 6rem;
   margin-bottom: 0;
-  color: #251645;
+  color: #0a011e;
 }
 @media only screen and (max-width: 56.25em) {
   .business_goals .about h3 {
@@ -441,7 +442,7 @@ html {
 }
 .business_goals .about-description {
   width: 50vw;
-  background: #ffffcc;
+  background: #6ccbf3;
   box-shadow: 0px 3px 18px -3px #dedede;
   padding: 4rem;
   z-index: 100;
@@ -499,14 +500,14 @@ html {
   font-family: inherit;
   font-size: 1.4rem;
   font-weight: 700;
-  background-color: #341f60;
+  background-color: #100628;
   color: #feffff;
   padding: 1.5rem 3rem;
   cursor: pointer;
   border-radius: 0.5rem;
 }
 .business_goals .about-description .btn_secondary:hover {
-  background-color: #251645;
+  background-color: #0a011e;
 }
 .business_goals .about-description .btn_secondary a {
   text-decoration: none;
@@ -534,20 +535,20 @@ html {
   font-weight: 900;
   text-align: center;
   padding-bottom: 1rem;
-  border-bottom: 6px dashed #f1bc0e;
+  border-bottom: 6px dashed #002c3f;
   align-self: center;
 }
 @media only screen and (max-width: 56.25em) {
   .services_heading h1 {
     font-size: 3.8rem;
-    border-bottom: 4px dashed #f1bc0e;
+    border-bottom: 4px dashed #002c3f;
     padding-bottom: 1rem;
   }
 }
 @media only screen and (max-width: 56.25em) {
   .services_heading h1 {
     font-size: 3rem;
-    border-bottom: 2px dashed #f1bc0e;
+    border-bottom: 2px dashed #002c3f;
     padding-bottom: 0.4rem;
   }
 }
@@ -642,17 +643,17 @@ html {
   display: flex;
   place-content: center;
   place-items: center;
-  background: #dce5e7;
+  background: #6ccbf3;
   border-radius: 50%;
   margin-top: 1rem;
   cursor: pointer;
 }
 .services .card .btn_tertiary:hover {
-  background: #251645;
+  background: #002c3f;
 }
 .services .card .btn_tertiary .icon {
-  width: 3rem;
-  height: 3rem;
+  width: 2rem;
+  height: 2rem;
   margin: 0 auto;
 }
 
@@ -661,6 +662,7 @@ html {
   height: 100%;
   border-radius: 2rem;
   box-shadow: 0px 3px 18px -3px #dedede;
+  background-color: #feffff;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -770,7 +772,7 @@ html {
   }
 }
 .footer_right h1 {
-  border-bottom: 4px solid #f1bc0e;
+  border-bottom: 4px solid #002c3f;
   padding-bottom: 0.8rem;
   font-size: 2.4rem;
   margin-top: 0;
@@ -778,7 +780,7 @@ html {
 @media only screen and (max-width: 40em) {
   .footer_right h1 {
     font-size: 1.8rem;
-    border-bottom: 2px solid #f1bc0e;
+    border-bottom: 2px solid #002c3f;
     padding-bottom: 0.4rem;
     margin-top: 3rem;
   }
@@ -836,14 +838,14 @@ html {
 }
 
 .jumbotron .about {
-  background-color: #ffffcc !important;
+  background-color: #dcf5ff !important;
 }
 
 .jumbotron {
   width: 95%;
   height: 60vh;
   margin: 8rem auto 2rem auto;
-  background: #ffffcc;
+  background: #dcf5ff;
   border-radius: 2rem;
   display: grid;
   place-items: center;
@@ -933,7 +935,7 @@ html {
   font-weight: 900;
   text-align: center;
   padding-bottom: 1rem;
-  border-bottom: 6px dashed #f1bc0e;
+  border-bottom: 6px dashed #002c3f;
   align-self: center;
 }
 @media only screen and (max-width: 56.25em) {
@@ -944,7 +946,7 @@ html {
 @media only screen and (max-width: 40em) {
   .contact_section-heading h1 {
     font-size: 2.4rem;
-    border-bottom: 3px dashed #f1bc0e;
+    border-bottom: 3px dashed #002c3f;
     padding-bottom: 0.5rem;
   }
 }
@@ -997,9 +999,9 @@ html {
 .contact_section-form .btn_secondary {
   border: none;
   font-family: inherit;
-  font-size: 1.4rem;
-  font-weight: 700;
-  background-color: #341f60;
+  font-size: 1.6rem;
+  font-weight: 900;
+  background-color: #952020;
   color: #feffff;
   padding: 1.5rem 3rem;
   cursor: pointer;
@@ -1007,7 +1009,7 @@ html {
   border-radius: 0.5rem;
 }
 .contact_section-form .btn_secondary:hover {
-  background-color: #251645;
+  background-color: #952020;
 }
 
 .main {
@@ -1208,29 +1210,29 @@ html {
   font-weight: 900;
   text-align: center;
   padding-bottom: 1rem;
-  border-bottom: 6px dashed #f1bc0e;
+  border-bottom: 6px dashed #002c3f;
   align-self: center;
 }
 @media only screen and (max-width: 56.25em) {
   .team_heading h1 {
     font-size: 3.6rem;
-    border-bottom: 3px dashed #f1bc0e;
+    border-bottom: 3px dashed #002c3f;
     padding-bottom: 0.4rem;
   }
 }
 @media only screen and (max-width: 40em) {
   .team_heading h1 {
     font-size: 4rem;
-    border-bottom: 4px dashed #f1bc0e;
+    border-bottom: 4px dashed #002c3f;
     padding-bottom: 0.4rem;
   }
 }
 .team .btn_secondary {
   border: none;
   font-family: inherit;
-  font-size: 1.4rem;
-  font-weight: 700;
-  background-color: #341f60;
+  font-size: 1.6rem;
+  font-weight: 900;
+  background-color: #952020;
   color: #feffff;
   padding: 1.5rem 5rem;
   align-self: center;
@@ -1239,7 +1241,7 @@ html {
   cursor: pointer;
 }
 .team .btn_secondary:hover {
-  background-color: #251645;
+  background-color: #952020;
 }
 .team .btn_secondary a {
   text-decoration: none;
@@ -1268,7 +1270,7 @@ html {
 
 .footer {
   width: 95vw;
-  background: #251645;
+  background: #0a011e;
   height: 70vh;
   padding: 6rem;
   border-radius: 2rem;
@@ -1280,14 +1282,14 @@ html {
 @media only screen and (max-width: 56.25em) {
   .footer {
     width: 95vw;
-    background: #251645;
+    background: #0a011e;
     height: auto;
   }
 }
 @media only screen and (max-width: 40em) {
   .footer {
     width: 100%;
-    background: #251645;
+    background: #0a011e;
     height: auto;
     padding: 2rem 1.5rem;
     flex-direction: column;
@@ -1591,8 +1593,8 @@ html {
 }
 
 .services_header {
-  border-top: 2px solid #dce5e7;
-  border-left: 2px solid #dce5e7;
+  border-top: 2px solid #fbfeff;
+  border-left: 2px solid #fbfeff;
   padding: 2rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -1620,7 +1622,7 @@ html {
   font-family: inherit;
   font-size: 1.4rem;
   font-weight: 700;
-  background-color: #341f60;
+  background-color: #100628;
   color: #feffff;
   padding: 1rem;
   cursor: pointer;
@@ -1634,7 +1636,7 @@ html {
   }
 }
 .read_more:hover {
-  background-color: #251645;
+  background-color: #0a011e;
 }
 
 .ceo_profile {
@@ -1677,8 +1679,8 @@ html {
 }
 
 .ceo_profile-header {
-  border-top: 2px solid #dce5e7;
-  border-left: 2px solid #dce5e7;
+  border-top: 2px solid #fbfeff;
+  border-left: 2px solid #fbfeff;
   padding: 2rem;
   margin-bottom: 6rem;
 }
@@ -1713,7 +1715,7 @@ html {
   width: 100%;
   height: 85%;
   margin-bottom: 1rem;
-  border: 0.8rem solid #f1bc0e;
+  border: 0.8rem solid #002c3f;
   overflow: hidden;
 }
 @media only screen and (max-width: 40em) {
@@ -1721,7 +1723,7 @@ html {
     width: 30rem;
     height: 30rem;
     margin: 1rem auto;
-    border: 0.6rem solid #f1bc0e;
+    border: 0.6rem solid #002c3f;
   }
 }
 .ceo_profile-image img {
@@ -1771,7 +1773,7 @@ html {
   margin-bottom: 2rem;
 }
 .ceo_profile-right h2 span {
-  color: #f1bc0e;
+  color: #002c3f;
 }
 .ceo_profile-right p {
   font-size: 1.8rem;
@@ -1861,7 +1863,7 @@ html {
 .about_mission-wrapper {
   display: flex;
   height: 70vh;
-  background: #f1bc0e;
+  background: #002c3f;
 }
 .about_cards {
   width: 100%;
@@ -1891,8 +1893,8 @@ html {
 }
 
 .about_header {
-  border-top: 2px solid #dce5e7;
-  border-left: 2px solid #dce5e7;
+  border-top: 2px solid #fbfeff;
+  border-left: 2px solid #fbfeff;
   padding: 2rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -1947,11 +1949,11 @@ html {
 }
 .about_cards .card.primary {
   color: #feffff;
-  background-color: #251645;
+  background-color: #0a011e;
 }
 .about_cards .card.accent {
-  background-color: #f1bc0e;
-  color: #251645;
+  background-color: #002c3f;
+  color: #0a011e;
 }
 
 .experiences .slide-item img {
