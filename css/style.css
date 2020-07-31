@@ -2010,12 +2010,41 @@ html {
   width: 85%;
   margin: 6rem auto;
 }
+@media only screen and (max-width: 56.25em) {
+  .about_main {
+    width: 95%;
+    margin: 2rem auto 1rem auto;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .about_main {
+    width: 95%;
+    margin: 2rem auto 1rem auto;
+  }
+}
 .about_main-wrapper {
   display: flex;
   justify-content: space-between;
   height: 82vh;
   width: 100%;
   margin: 0rem 0 8rem 0;
+}
+@media only screen and (max-width: 56.25em) {
+  .about_main-wrapper {
+    width: 100%;
+    margin: 0rem 0 8rem 0;
+    height: 55vh;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .about_main-wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 3px 18px -3px #dedede;
+    margin: 0rem 0 4rem 0;
+  }
 }
 .about_mission-wrapper {
   display: flex;
@@ -2027,11 +2056,42 @@ html {
   display: flex;
   flex-wrap: wrap;
 }
+@media only screen and (max-width: 40em) {
+  .about_cards {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .about_cards > :nth-child(5) {
+    order: 6;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .about_cards > :nth-child(6) {
+    order: 5;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .about_cards > :nth-child(7) {
+    order: 8;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .about_cards > :nth-child(8) {
+    order: 7;
+  }
+}
 .about_cards > .card {
   width: 25%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+@media only screen and (max-width: 40em) {
+  .about_cards > .card {
+    width: 82%;
+    height: 25rem;
+  }
 }
 
 .experiences {
@@ -2108,6 +2168,9 @@ html {
   font-family: "Paytone One";
 }
 
+.about_main-wrapper {
+  height: auto;
+}
 .about_left {
   width: 100%;
   height: 100%;
@@ -2117,27 +2180,80 @@ html {
   height: 40rem;
   margin-top: 1.5rem;
 }
+@media only screen and (max-width: 56.25em) {
+  .about_left-image {
+    width: 30rem;
+    height: 30rem;
+    align-self: center;
+    justify-self: center;
+    margin-right: 2rem;
+    margin-left: 1rem;
+    margin-top: 4rem;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .about_left-image {
+    width: 20rem;
+    height: 20rem;
+    align-self: center;
+    margin: 0 auto;
+  }
+}
 .about_left-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.about_right, .about_cards {
+.about_right {
   padding: 0 4rem;
   box-shadow: 0px 3px 18px -3px #dedede;
 }
-.about_right h2, .about_cards h2 {
+@media only screen and (max-width: 56.25em) {
+  .about_right {
+    padding: 0 2rem;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .about_right {
+    padding: 0 2rem;
+    box-shadow: none;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .about_right #more {
+    display: none;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .about_right #more_btn {
+    display: block;
+  }
+}
+.about_right h2 {
   margin-top: 3rem;
   margin-bottom: 1rem;
   font-weight: 900;
   font-size: 2.4rem;
 }
-.about_right p, .about_cards p {
+.about_right p {
   line-height: 1.6;
   font-size: 1.8rem;
 }
+@media only screen and (max-width: 56.25em) {
+  .about_right p {
+    line-height: 1.4;
+    font-size: 1.5rem;
+  }
+}
 .about_cards {
-  padding: 0;
+  padding: 0 4rem;
+  box-shadow: 0px 3px 18px -3px #dedede;
+}
+@media only screen and (max-width: 40em) {
+  .about_cards {
+    padding: 4rem 0;
+  }
 }
 .about_cards img {
   object-fit: cover;

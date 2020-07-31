@@ -5,12 +5,37 @@
     width: 85%;
     margin: 6rem auto;
 
+    @include respond(tab-port) {
+      width: 95%;
+      margin: 2rem auto 1rem auto;
+    }
+
+    @include respond(phone) {
+      width: 95%;
+      margin: 2rem auto 1rem auto;
+    }
+
     &-wrapper {
       display: flex;
       justify-content: space-between;
       height: 82vh;
       width: 100%;
       margin: 0rem 0 8rem 0;
+
+      @include respond(tab-port) {
+        width: 100%;
+        margin: 0rem 0 8rem 0;
+        height: 55vh;
+      }
+
+      @include respond(phone) {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px 3px 18px -3px rgba(222, 222, 222, 1);
+        margin: 0rem 0 4rem 0;
+      }
     }
   }
 
@@ -28,11 +53,44 @@
     display: flex;
     flex-wrap: wrap;
 
+    @include respond(phone) {
+      justify-content: center;
+    }
+
+    & > :nth-child(5) {
+      @include respond(phone) {
+        order: 6;
+      }
+    }
+
+    & > :nth-child(6) {
+      @include respond(phone) {
+        order: 5;
+      }
+    }
+
+    & > :nth-child(7) {
+      @include respond(phone) {
+        order: 8;
+      }
+    }
+
+    & > :nth-child(8) {
+      @include respond(phone) {
+        order: 7;
+      }
+    }
+
     & > .card {
       width: 25%;
       display: flex;
       flex-direction: column;
       justify-content: center;
+
+      @include respond(phone) {
+        width: 82%;
+        height: 25rem;
+      }
     }
   }
 }

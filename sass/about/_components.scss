@@ -15,6 +15,11 @@
 }
 
 .about {
+ 
+  &_main-wrapper {
+    height: auto;
+  }
+
   &_left {
     // padding: 4rem;
     width: 100%;
@@ -25,6 +30,23 @@
       height: 40rem;
       margin-top: 1.5rem;
 
+      @include respond(tab-port) {
+        width: 30rem;
+        height: 30rem;
+        align-self: center;
+        justify-self: center;
+        margin-right: 2rem;
+        margin-left: 1rem;
+        margin-top: 4rem;
+      }
+
+      @include respond(phone) {
+        width: 20rem;
+        height: 20rem;
+        align-self: center;
+        margin: 0 auto;
+      }
+
       img {
         width: 100%;
         height: 100%;
@@ -33,9 +55,31 @@
     }
   }
 
-  &_right, &_cards {
+  &_right {
     padding: 0 4rem;
     box-shadow: 0px 3px 18px -3px rgba(222, 222, 222, 1);
+
+    @include respond(tab-port) {
+      padding: 0 2rem;
+      height: auto;
+    }
+
+    @include respond(phone) {
+      padding: 0 2rem;
+      box-shadow: none;
+    }
+
+    #more {
+      @include respond(tab-port) {
+        display: none;
+      }
+    }
+
+    #more_btn {
+      @include respond(tab-port) {
+        display: block;
+      }
+    }
 
     h2 {
       margin-top: 3rem;
@@ -47,12 +91,22 @@
     p {
       line-height: 1.6;
       font-size: 1.8rem;
+
+       @include respond(tab-port) {
+        line-height: 1.4;
+        font-size: 1.5rem;
+      }
     }
 
   }
 
   &_cards {
-    padding: 0;
+    padding: 0 4rem;
+    box-shadow: 0px 3px 18px -3px rgba(222, 222, 222, 1);
+
+     @include respond(phone) {
+      padding: 4rem 0; 
+    }
 
     img {
       object-fit: cover;
