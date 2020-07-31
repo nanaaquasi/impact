@@ -709,13 +709,28 @@ html {
 }
 
 .mission div {
-  margin-top: 6rem;
+  margin-top: 2rem;
 }
 .mission div .slide-item > div:last-of-type {
   padding: 0 30px;
 }
+@media only screen and (max-width: 40em) {
+  .mission div .slide-item > div:last-of-type {
+    padding: 0 1rem;
+  }
+}
 .mission div .slide-item > div:last-of-type .item-header {
   margin-bottom: 24px;
+}
+@media only screen and (max-width: 56.25em) {
+  .mission div .slide-item > div:last-of-type .item-header {
+    margin-bottom: 12px;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .mission div .slide-item > div:last-of-type .item-header {
+    margin-bottom: 12px;
+  }
 }
 .mission div .slide-item > div:last-of-type .item-header > h3 {
   margin-top: 3rem;
@@ -723,13 +738,47 @@ html {
   font-weight: 900;
   font-size: 2.4rem;
 }
+@media only screen and (max-width: 56.25em) {
+  .mission div .slide-item > div:last-of-type .item-header > h3 {
+    font-size: 2rem;
+    margin-top: 0rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .mission div .slide-item > div:last-of-type .item-header > h3 {
+    font-size: 2rem;
+    margin-top: 0rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+}
 .mission div .slide-item > div:last-of-type .item-header > span {
   font-size: 1.4rem;
   font-weight: 900;
 }
+@media only screen and (max-width: 56.25em) {
+  .mission div .slide-item > div:last-of-type .item-header > span {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .mission div .slide-item > div:last-of-type .item-header > span {
+    display: flex;
+    justify-content: center;
+  }
+}
 .mission div .slide-item > div:last-of-type p {
   line-height: 1.6;
   font-size: 1.8rem;
+}
+@media only screen and (max-width: 40em) {
+  .mission div .slide-item > div:last-of-type p {
+    font-size: 1.6rem;
+    text-align: center;
+  }
 }
 
 .footer_nav {
@@ -1059,7 +1108,7 @@ html {
 }
 @media only screen and (max-width: 40em) {
   .main .header {
-    max-width: 100%;
+    width: 100%;
     padding: 0 2rem;
   }
 }
@@ -1172,17 +1221,31 @@ html {
 
 .mission {
   width: 90%;
-  height: 90rem;
   background: #f5fdff;
-  margin: 15rem auto 6rem auto;
-  padding: 10rem 8rem;
+  padding: 12rem 2rem 2rem 2rem;
   clip-path: polygon(0 0, 100% 17%, 100% 100%, 0% 100%);
   border-bottom-left-radius: 2rem;
   border-bottom-right-radius: 2rem;
   display: flex;
   flex-direction: column;
-  width: 90%;
-  margin: 4rem auto 8rem auto;
+  margin: 12rem auto 8rem auto;
+}
+.mission_container {
+  width: 100%;
+  margin-bottom: 8rem;
+}
+.mission .splide {
+  width: 100%;
+  height: fit-content;
+  background-color: white;
+  box-shadow: 0px 3px 5px 0px rgba(209, 209, 209, 0.57);
+  padding: 0rem 2rem;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 40em) {
+  .mission .splide {
+    height: 60rem;
+  }
 }
 .mission_header {
   text-align: center;
@@ -1190,22 +1253,69 @@ html {
   font-weight: 900;
   font-family: "Paytone One";
 }
-.mission .slide {
-  margin-bottom: 4rem;
-  margin-top: -8rem;
+@media only screen and (max-width: 56.25em) {
+  .mission_header {
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .mission_header {
+    font-size: 2.4rem;
+  }
 }
 .mission .slide-item {
   display: flex;
+  flex-direction: row;
   width: 100%;
+  height: 100%;
+  padding: 0 !important;
+}
+@media only screen and (max-width: 56.25em) {
+  .mission .slide-item {
+    flex-direction: column;
+    height: fit-content;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .mission .slide-item {
+    flex-direction: column;
+    height: fit-content;
+  }
 }
 .mission .slide-item > div {
   width: 50%;
-  height: 64vh;
+  height: 100%;
+}
+@media only screen and (max-width: 56.25em) {
+  .mission .slide-item > div {
+    width: 100%;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .mission .slide-item > div {
+    width: 100%;
+    height: auto;
+  }
 }
 .mission .slide-item > div img {
-  width: 50rem;
+  width: 100%;
+  height: auto;
   object-fit: cover;
-  margin-left: 3rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .mission .slide-item > div img {
+    width: 100%;
+    height: 40rem;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .mission .slide-item > div img {
+    width: 100%;
+    height: 20rem;
+    margin: 0 auto;
+  }
 }
 @media only screen and (max-width: 56.25em) {
   .mission {
@@ -1215,9 +1325,9 @@ html {
 @media only screen and (max-width: 40em) {
   .mission {
     clip-path: none;
-    width: 95%;
+    width: 98%;
     margin: 2rem auto 6rem auto;
-    padding: 2rem 8rem;
+    padding: 2rem;
   }
 }
 
@@ -1932,16 +2042,57 @@ html {
 }
 .experiences .slide-item {
   display: flex;
+  flex-direction: row;
   width: 100%;
+  height: 100%;
+  padding: 0 !important;
+}
+@media only screen and (max-width: 56.25em) {
+  .experiences .slide-item {
+    flex-direction: column;
+    height: fit-content;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .experiences .slide-item {
+    flex-direction: column;
+    height: fit-content;
+  }
 }
 .experiences .slide-item > div {
   width: 50%;
-  height: 64vh;
+  height: 100%;
+}
+@media only screen and (max-width: 56.25em) {
+  .experiences .slide-item > div {
+    width: 100%;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .experiences .slide-item > div {
+    width: 100%;
+    height: auto;
+  }
 }
 .experiences .slide-item > div img {
-  width: 50rem;
+  width: 100%;
+  height: auto;
   object-fit: cover;
-  margin-left: 6rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .experiences .slide-item > div img {
+    width: 100%;
+    height: 40rem;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .experiences .slide-item > div img {
+    width: 100%;
+    height: 20rem;
+    margin: 0 auto;
+  }
 }
 
 .about_header {
@@ -2012,15 +2163,26 @@ html {
   color: #feffff;
 }
 
-.experiences .slide-item img {
-  width: 100%;
-  object-fit: cover;
-}
 .experiences .slide-item > div:last-of-type {
-  padding: 0 14px;
+  padding: 0 30px;
+}
+@media only screen and (max-width: 40em) {
+  .experiences .slide-item > div:last-of-type {
+    padding: 0 1rem;
+  }
 }
 .experiences .slide-item > div:last-of-type .item-header {
   margin-bottom: 24px;
+}
+@media only screen and (max-width: 56.25em) {
+  .experiences .slide-item > div:last-of-type .item-header {
+    margin-bottom: 12px;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .experiences .slide-item > div:last-of-type .item-header {
+    margin-bottom: 12px;
+  }
 }
 .experiences .slide-item > div:last-of-type .item-header > h3 {
   margin-top: 3rem;
@@ -2028,13 +2190,47 @@ html {
   font-weight: 900;
   font-size: 2.4rem;
 }
+@media only screen and (max-width: 56.25em) {
+  .experiences .slide-item > div:last-of-type .item-header > h3 {
+    font-size: 2rem;
+    margin-top: 0rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .experiences .slide-item > div:last-of-type .item-header > h3 {
+    font-size: 2rem;
+    margin-top: 0rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+}
 .experiences .slide-item > div:last-of-type .item-header > span {
   font-size: 1.4rem;
   font-weight: 900;
 }
+@media only screen and (max-width: 56.25em) {
+  .experiences .slide-item > div:last-of-type .item-header > span {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .experiences .slide-item > div:last-of-type .item-header > span {
+    display: flex;
+    justify-content: center;
+  }
+}
 .experiences .slide-item > div:last-of-type p {
   line-height: 1.6;
   font-size: 1.8rem;
+}
+@media only screen and (max-width: 40em) {
+  .experiences .slide-item > div:last-of-type p {
+    font-size: 1.6rem;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

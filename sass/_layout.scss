@@ -24,7 +24,7 @@
     }
 
     @include respond(phone) {
-      max-width: 100%;
+    width: 100%;
       padding: 0 2rem;
     }
 
@@ -137,43 +137,105 @@
 
 .mission {
   width: 90%;
-  height: 90rem;
   background: $color-primary-lighter;
-  margin: 15rem auto 6rem auto;
-  padding: 10rem 8rem;
+  padding: 12rem 2rem 2rem 2rem;
   clip-path: polygon(0 0, 100% 17%, 100% 100%, 0% 100%);
   border-bottom-left-radius: 2rem;
   border-bottom-right-radius: 2rem;
   display: flex;
   flex-direction: column;
-  width: 90%;
-  margin: 4rem auto 8rem auto;
+  margin: 12rem auto 8rem auto;
+
+  &_container {
+    width: 100%;
+    margin-bottom: 8rem;
+  
+  }
+
+  .splide {
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    box-shadow: 0px 3px 5px 0px rgba(209, 209, 209, 0.57);
+    padding: 0rem 2rem;
+    margin: 0 auto;
+
+    @include respond(phone){
+      height: 60rem;
+    }
+  }
+
 
   &_header {
     text-align: center;
     font-size: 4.2rem;
     font-weight: 900;
     font-family: $font-header;
+
+     @include respond(tab-port){
+      font-size: 3rem;
+    }
+
+    @include respond(phone){
+      font-size: 2.4rem;
+    }
   }
 
-  .slide {
-    margin-bottom: 4rem;
-    margin-top: -8rem;
-  }
+  // .slide {
+  //   margin-bottom: 4rem;
+  //   margin-top: -8rem;
+  // }
 
 
   .slide-item {
     display: flex;
+    flex-direction: row;
     width: 100%;
+    height: 100%;
+    padding: 0 !important;
+
+    @include respond(tab-port){
+      flex-direction: column;
+      height: fit-content;
+    }
+
+    @include respond(phone){
+      flex-direction: column;
+      height: fit-content;
+    }
 
      & > div {
       width: 50%;
-      height: 64vh;
+      height: 100%;
+
+
+       @include respond(tab-port){
+        width: 100%;
+        height: auto;
+      }
+
+      @include respond(phone){
+        width: 100%;
+        height: auto;
+      }
 
        img {
-        width: 50rem;
+        width: 100%;
+        height: auto;
         object-fit: cover;
-        margin-left: 3rem;
+
+
+        @include respond(tab-port){
+          width: 100%;
+          height: 40rem;
+          margin: 0 auto;
+        }
+
+        @include respond(phone){
+          width: 100%;
+          height: 20rem;
+          margin: 0 auto;
+        }
       }
     }
   }
@@ -184,9 +246,9 @@
 
   @include respond(phone) {
     clip-path: none;
-    width: 95%;
+    width: 98%;
     margin: 2rem auto 6rem auto;
-    padding: 2rem 8rem;
+    padding: 2rem;
   }
 }
 

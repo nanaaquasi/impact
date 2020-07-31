@@ -43,21 +43,56 @@
   width: 90%;
   margin: 4rem auto 8rem auto;
 
-  .slide-item {
+   .slide-item {
     display: flex;
+    flex-direction: row;
     width: 100%;
+    height: 100%;
+    padding: 0 !important;
+
+    @include respond(tab-port){
+      flex-direction: column;
+      height: fit-content;
+    }
+
+    @include respond(phone){
+      flex-direction: column;
+      height: fit-content;
+    }
 
      & > div {
       width: 50%;
-      height: 64vh;
+      height: 100%;
 
-      img {
-        width: 50rem;
+
+       @include respond(tab-port){
+        width: 100%;
+        height: auto;
+      }
+
+      @include respond(phone){
+        width: 100%;
+        height: auto;
+      }
+
+       img {
+        width: 100%;
+        height: auto;
         object-fit: cover;
-        margin-left: 6rem;
+
+
+        @include respond(tab-port){
+          width: 100%;
+          height: 40rem;
+          margin: 0 auto;
+        }
+
+        @include respond(phone){
+          width: 100%;
+          height: 20rem;
+          margin: 0 auto;
+        }
       }
     }
-
- 
   }
 }
